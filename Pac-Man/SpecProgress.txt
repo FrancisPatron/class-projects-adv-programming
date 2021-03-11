@@ -1,0 +1,38 @@
+
+===================================================================================NOT DONE=============================================
+
+...... empty ......
+
+
+========================================================================================DONE============================================
+
+__________________________Phase 1:Warm up_________________________________________________________________	
+o Change the “logo” of Pac-Man in the game selection screen for the actual game’s
+	logo.
+o Make the Big Dot “blink” (appear on and off).
+o In the MapBuilder change the “Ghost” spawn (under the ghost color condition) for a
+	new “GhostSpawner” Class which you will create and leave empty for now
+
+__________________________Phase 2: Debugging Commands_____________________________________________________
+o Implement the keyboard button ‘C’ that makes the “GhostSpawner” class spawn a
+	new ghost in its location.
+o Implement the keyboard button ‘N’ that gives Pac-Man one extra life.
+o Implement the keyboard button ‘P’ that ends Pac-Man’s life.
+
+__________________________Phase 3: Implement additional Features__________________________________________
+o Once Pac-Man loses 3 lives, change to a EndGame State in which the game will
+	store the score if it’s higher than the current high score.
+o Every dot has a 1/30 chance to be a fruit rather than a dot. This fruit will give the
+	player 120 points instead of the base dot value. (You must have a minimum of 2
+	randomly selected sprites for the fruit).
+o If Pac-Man eats a BigDot, the Ghosts should flash between Dark Blue and Cyan,
+	and should be edible by Pac-Man for x (you define x) amount of seconds. On being
+	eaten (on collision), the Ghosts should disappear.
+o Make the spawner spawn 4 ghosts ( with different colors, and speed, on the map, on
+	top of himself, at the beginning of the game, if one were to die and be teleported to
+	qthe spawner, the player will get 500 points, then, the spawner will pick a random
+	amount of tick to wait for before resending it out.
+o Make the Ghosts walk outside the cage, then move in a single direction, and if they
+	clash against a wall they should change direction to one of the available directions
+	(paths).
+o Make the Ghosts kill Pac-Man on collision.
